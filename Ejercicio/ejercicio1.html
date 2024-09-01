@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología - Página Principal</title>
+    <link rel="icon" href="cuadro.jpg"/>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f3f5ff;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            height: 100vh;
+        }
+        header {
+            background-color: #3236A2 ;
+            color: #f0f0f0;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #fffafa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 1em;
+        }
+        section {
+            background-color: #b1c1ff;
+            padding: 1em;
+            border: 1px solid #ffb1fe;
+        }
+        footer {
+            background-color: #a8aeff;
+            color: #0d0808;
+            text-align: center;
+            padding: 1em;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            main {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            } 
+            .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/"><img src="logo3.webp" width="300" height="100" alt="Logo"/></a>
+        </div>
+        <h1>Tecnología - Innovación y Tendencias</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"> Home|</a></li>
+                <li><a href="gadgets.html">Gadgets|</a></li>
+                <li><a href="IA.html">IA|</a></li>
+                <li><a href="software.html">Software|</a></li>
+                <li><a href="noticias.html">Noticias|</a></li>
+                <li><a href="contacto.html">Contacto|</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <a href="/"><img src="T.jpg" alt="Imagen de Tecnología"></a>
+    </div>
+    <main>
+        <section>
+            <h2>Últimas Noticias</h2>
+            <p>Meta dice que hackers iraníes atacaron WhatsApp de equipos de Trump y Biden.</p>
+            <p>Los robots humanoides revolucionan el mercado tecnológico.</p>
+            <p>La IA de Musk está generando imágenes falsas y realistas de Trump y Biden.</p>
+            <p>La NASA encuentra una roca que podría tener rastros de vida en Marte.</p>
+        </section>
+        <section>
+            <h2>Gadgets Destacados</h2>
+            <p><b>Información sobre los gadgets más innovadores del mercado.</b></p>
+            <p>Laptop HP Spectre x360 (14 pulgadas) por 1,500 dólares.</p>
+            <p>Cargadores inalámbricos MagGo Qi2 de Anker desde 22 dólares.</p>
+            <p>Smartphone Punkt MC02 con Apostrophy OS por 749 dólares.</p>
+        </section>
+        <section>
+            <h2>Inteligencia Artificial</h2>
+            <p><b>Nuevos avances sobre la IA.</b></p>
+            <p>Modelos de aprendizaje automático más sofisticados.</p>
+            <p>Procesamiento del lenguaje natural mejorado.</p>
+            <p>Asistentes personales inteligentes.</p>
+            <p>Innovaciones en el cuidado de la salud.</p>
+        </section>
+        <section>
+            <h2>Software Recomendado</h2>
+            <p><b>Reseñas de software que facilitan la vida diaria.</b></p>
+            <p>Ayuda a promover un negocio: el desarrollo de software beneficia a las estrategias de marketing al promover productos y servicios de una empresa en todo el mundo y sin la necesidad de invertir tiempo o dinero adicional.</p>
+            <p>Facilita la comunicación y la colaboración: el desarrollo de software permite crear aplicaciones y plataformas que facilitan la comunicación.</p>
+            <p>Mejora la productividad y la eficiencia: el desarrollo de software permite automatizar y optimizar procesos, reducir errores, ahorrar tiempo, aumentar la calidad.</p>
+            <p>Aporta valor y competitividad: el desarrollo de software permite crear productos y servicios innovadores, diferenciados, personalizados, adaptados a las necesidades y preferencias de los usuarios.</p>
+        </section>
+        <section>
+            <h2>Suscríbete a nuestras Noticias</h2>
+            <p><b>Formulario de suscripción para recibir actualizaciones.</b></p>
+            <p>Profesionales en videojuegos: evolución de los salarios y expectativas para el 2025.</p>
+            <p>Transformación Digital: ¿cuánto deben invertir las pymes para digitalizarse?</p>
+            <p>The Economist: Apple no puede fabricar automóviles, pero estas gigantes chinas.</p>
+            <p>Smishing: ¿cómo evitar caer en este tipo de ciberdelincuencia?</p>
+        </section>
+    </main>
+    <footer>
+        <p>Diseñado por:</p>
+        <p>&copy; Cinthia Aracely Camacho De La Cruz</p>
+    </footer>
+</body>
+</html>

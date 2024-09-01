@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Tecnología 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #FFBF83;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #C9FFF5;
+            color: #201f1f;
+            padding-top: 20px;
+            min-height: 50px;
+            border-bottom: #ccc 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .news-item {
+            background: #f9f9f9;
+            border: #ff4444 3px solid;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center; 
+        }
+        .news-item h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #ff3838; 
+        }
+        .news-item p {
+            font-size: 16px;
+        }
+        .news-item img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 100%; 
+        }
+        footer {
+            background: #1e1e1e;
+            color: #d8fff4;
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Noticias de Tecnología 2024</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div th:each="news : ${newsList}" class="news-item">
+            <h2 th:text="${news.title}">Nuevas Noticias</h2>
+            <p th:text="${news.content}"><b>Profesionales en videojuegos: Evolución de los salarios y expectativas para el 2025.</b></p>
+            <p>Así como avanza la tecnología, el mundo de los videojuegos va creciendo a la par. Actualmente, hay universidades e institutos que ofrecen esta carrera, 
+                e incluso colegios que consideran a este curso en la malla curricular.</p>
+            <img src="gamer.jpg" alt="Profesional de videojuegos" width="200" height="200">
+            <p><em th:text="${news.date}">Día: 29/08/2024</em></p>
+        </div>
+    </div>
+    <div class="container">
+        <div th:each="news : ${newsList}" class="news-item">
+            <h2 th:text="${news.title}">Nuevas Noticias</h2>
+            <p th:text="${news.content}"><b>Trujillo: Nace primera ternera producto de transferencia tecnológica.</p></b>
+            <p>El nacimiento de Rosita, la primera cría vacuno producto de la transferencia de embriones, significa un paso
+                 importante dentro del ámbito de la investigación reproductivo animal del Instituto 
+                 de Biotecnología Molecular y Reproductiva Animal (IBMRA) de la Universidad Privada Antenor
+                 Orrego (UPAO) de Trujillo, región La Libertad.</p>
+            <img src="animal.jpg" alt="Nace primer ternera" width="200" height="200">
+            <p><em th:text="${news.date}">Día: 30/08/2024</em></p>
+        </div>
+    </div>
+    <div class="container">
+        <div th:each="news : ${newsList}" class="news-item">
+            <h2 th:text="${news.title}">Nuevas Noticias</h2>
+            <p th:text="${news.content}"><b>China presenta en la conferencia de robótica de Pekín un perro robot que podría tener uso militar.</p></b>
+            <p>Estos días en Pekín, celebran la conferencia anual de robótica. Y destacan por ejemplo 
+                unos robot con aspecto de perros, destinados a priori al hogar. 
+                Pero, que ya tienen también uso militar.</p>
+            <img src="perro.jpg" alt="Perrito robot" width="200" height="200">
+            <p><em th:text="${news.date}">Día: 23/08/2024</em></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Cinthia Aracely Camacho De La Cruz 2024</p>
+    </footer>
+</body>
+</html>
